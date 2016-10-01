@@ -1,3 +1,9 @@
+/*
+Connect Four game
+2016 Oleg Savchuk
+https://github.com/osalabs/connect-four-game-js
+
+ */
 var ConnectFour = (function ($) {
     var app = {};
     var COLS = 7, ROWS = 6; //area size
