@@ -1,0 +1,57 @@
+.cf {
+    background-color: #fcfcfc;
+    position: relative;
+}
+    .cf .player-info {
+        position: relative;
+        top:0;
+        z-index:10;
+        text-align: center;
+        font-size: 2em;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        opacity: 0.5;
+    }
+
+    .cf .player-info.gameover {
+        padding:55px 20px;
+        background: #339933;
+        color: #fff;
+        opacity: 0.8;
+    }
+
+    .cf .place {
+        position: absolute;
+        z-index:5;
+        top: 0;
+        left: 0;
+        width: 40;
+        height: 40;
+        border: 2px solid #99ccff;
+        border-radius: 50%;
+    }
+    .cf .place.empty {
+    }
+    .cf.player1 .place.empty:hover {
+        background-color: #ffcccc;
+    }
+    .cf.player2 .place.empty:hover {
+        background-color: #ffffcc;
+    }
+    .cf .disk {
+        border-radius: 50%;
+    }
+    .cf .disk.red {
+        background: #ff6666;
+        background: -moz-radial-gradient(center, ellipse cover,  #ff3019 0%, #cf0404 100%); /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover,  #ff3019 0%,#cf0404 100%); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center,  #ff3019 0%,#cf0404 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
+    .cf .disk.yellow {
+        background: #ffff66;
+        background: -moz-radial-gradient(center, ellipse cover,  #f1e767 0%, #feb645 100%); /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover,  #f1e767 0%,#feb645 100%); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center,  #f1e767 0%,#feb645 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    }
